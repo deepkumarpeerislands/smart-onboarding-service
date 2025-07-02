@@ -8,7 +8,7 @@ plugins {
 }
 
 jacoco {
-	toolVersion = "0.8.12" // Use the version you want
+	toolVersion = "0.8.13" // Use the version you want
 }
 
 tasks.test {
