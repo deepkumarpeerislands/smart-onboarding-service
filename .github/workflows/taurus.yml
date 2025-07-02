@@ -1,0 +1,35 @@
+name: Taurus Performance Test
+
+on:
+  push:
+    branches:
+      - feature/display_list_BRD_screen
+  pull_request:
+
+jobs:
+  performance-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set Up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Taurus
+        run: pip install bzt
+
+      - name: Install dependencies
+        run: pip install setuptools
+
+      - name: Run Taurus Test
+        run: bzt taurus-config.yml
+
+      - name: Upload Test Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: Taurus-Report
+          path: artifacts/

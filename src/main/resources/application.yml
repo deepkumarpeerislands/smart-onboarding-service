@@ -1,0 +1,213 @@
+spring:
+  application:
+    name: smart-onboarding
+  data:
+    mongodb:
+      uri: mongodb+srv://${MONGO_USERNAME}:${MONGO_KEY}@onboarding.v6znh.mongodb.net/smart_onboarding?retryWrites=true&w=majority&maxPoolSize=50&minPoolSize=5&maxIdleTimeMS=30000&serverSelectionTimeoutMS=${MONGO_SERVER_SELECTION_TIMEOUT_MS:10000}&connectTimeoutMS=${MONGO_CONNECT_TIMEOUT_MS:10000}&socketTimeoutMS=${MONGO_SOCKET_TIMEOUT_MS:10000}
+      database: smart_onboarding
+  redis:
+    host: ${REDIS_HOST:localhost}
+    port: ${REDIS_PORT:6379}
+    password: ${REDIS_PASSWORD:}
+    ssl: ${REDIS_SSL:false}
+    timeout: 10000
+    connect-timeout: 10000
+  ai:
+    provider: ${AI_PROVIDER}
+    service:
+      azure:
+        endpoint: ${AZURE_ENDPOINT}
+        api-key: ${AZURE_API_KEY}
+        deployment-name: ${AZURE_DEPLOYMENT_NAME}
+        embedding-deployment-name: ${AZURE_EMBEDDING_DEPLOYMENT_NAME}
+        temperature: 0.5
+        max-tokens: ${MAX_TOKENS}
+  azure:
+    blob:
+      connection-string: ${AZURE_BLOB_CONNECTION_STRING}
+      container-name: ${AZURE_BLOB_CONTAINER_NAME}
+
+  profiles:
+    active: dev
+
+api:
+  default:
+    path: /api/v1
+
+# Blob storage file configurations
+blob:
+  files:
+    rules-file: ${BLOB_RULES_FILE}
+
+# Encryption configuration
+encryption:
+  key: ${ENCRYPTION_KEY:SmartOnboardingDefaultKey123} # Override with environment variable in production
+
+logging:
+  level:
+    root: INFO
+    com.aci: DEBUG
+    org.springframework: WARN
+    org.springframework.boot.web: DEBUG
+    org.springframework.security: DEBUG
+    com.aci.smart_onboarding.security: DEBUG
+    org:
+      springdoc: DEBUG
+      springframework:
+        web: DEBUG
+
+management:
+  endpoint:
+    health:
+      show-details: always
+      status:
+        http-mapping:
+          DOWN: 503
+  endpoints:
+    web:
+      exposure:
+        include: health,info,openapi,swagger-ui
+  health:
+    db:
+      enabled: true
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: client-management
+    environment: ${spring.profiles.active:default}
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+    tagsSorter: alpha
+    tryItOutEnabled: true
+  packages-to-scan: com.aci.smart_onboarding
+  paths-to-match: /api/**
+
+# Current authentication configuration
+jwt:
+  secret: ${JWT_SECRET:your-secret-key-should-be-very-long-and-secure}
+  expiration: ${JWT_EXPIRATION:86400000} # 24 hours in milliseconds
+  issuer: smart-onboarding
+  audience: smart-onboarding-api
+
+
+# Login Security Configuration
+security:
+  login:
+    max-attempts: ${LOGIN_MAX_ATTEMPTS:5}
+    block-duration-seconds: ${LOGIN_BLOCK_DURATION:900}
+
+brd:
+  security:
+    enabled: true
+    roleBasedAccessEnabled: true
+    permissions:
+      - role: PM
+        allowedStatuses:
+          - status: Draft
+            methods: [ GET, POST, PUT, PATCH ]
+          - status: In Progress
+            methods: [ GET, POST, PUT, PATCH ]
+          - status: Internal Review
+            methods: [ GET, POST, PUT, PATCH ]
+          - status: Reviewed
+            methods: [ GET, POST, PUT, PATCH ]
+          - status: Ready for Sign-Off
+            methods: [ GET, POST, PUT, PATCH ]
+          - status: Signed Off
+            methods: [ GET, POST, PUT, PATCH ]
+          - status: Submit
+            methods: [ GET, PATCH ]
+          - status: Edit Complete
+            methods: [ GET, POST, PUT, PATCH ]
+      - role: BA
+        allowedStatuses:
+          - status: Draft
+            methods: [ GET ]
+          - status: In Progress
+            methods: [ GET ]
+          - status: Internal Review
+            methods: [ GET, POST, PUT ]
+          - status: Reviewed
+            methods: [ GET ]
+          - status: Ready for Sign-Off
+            methods: [ GET ]
+          - status: Signed Off
+            methods: [ GET ]
+          - status: Submit
+            methods: [ GET ]
+          - status: Edit Complete
+            methods: [ GET ]
+      - role: BILLER
+        allowedStatuses:
+          - status: Draft
+            methods: [ GET ]
+          - status: In Progress
+            methods: [ GET, POST, PUT ]
+          - status: Internal Review
+            methods: [ GET ]
+          - status: Reviewed
+            methods: [ GET ]
+          - status: Ready for Sign-Off
+            methods: [ GET, POST, PUT ]
+          - status: Signed Off
+            methods: [ GET ]
+          - status: Submit
+            methods: [ GET ]
+          - status: Edit Complete
+            methods: [ GET ]
+      - role: MANAGER
+        allowedStatuses:
+          - status: Draft
+            methods: [ GET, POST, PUT, PATCH ]
+          - status: In Progress
+            methods: [ GET, POST, PUT, PATCH ]
+          - status: Internal Review
+            methods: [ GET, POST, PUT, PATCH ]
+          - status: Reviewed
+            methods: [ GET, POST, PUT, PATCH ]
+          - status: Ready for Sign-Off
+            methods: [ GET, POST, PUT, PATCH ]
+          - status: Signed Off
+            methods: [ GET, POST, PUT, PATCH ]
+          - status: Submit
+            methods: [ GET,PATCH ]
+          - status: Edit Complete
+            methods: [ GET, POST, PUT, PATCH ]
+
+sendgrid:
+  api-key: ${SENDGRID_API_KEY}
+  sender.email: ${SENDGRID_EMAIL}
+  sender.name: Smart Onboarding Team
+
+# Application Configuration
+app:
+  frontend:
+    url: ${FRONTEND_URL:http://localhost:4200}
+  password-reset:
+    token-expiry-minutes: 30
+
+
+# Azure AD Configuration for Development
+azure:
+  activedirectory:
+    client-id: ${AZURE_CLIENT_ID}
+    client-secret: ${AZURE_CLIENT_SECRET}
+    tenant-id: ${AZURE_TENANT_ID}
+    authority: https://login.microsoftonline.com/${AZURE_TENANT_ID}
+    redirect-uri: ${AZURE_REDIRECT_URI}
+    scope: ${AZURE_SCOPE:api://${AZURE_CLIENT_ID}/.default}
+    role-claim: roles
+    role-prefix: ROLE_
+    graph-api-endpoint: https://graph.microsoft.com/v1.0
+    graph-api-scope: https://graph.microsoft.com/.default
+    biller-role-name: BILLER
+

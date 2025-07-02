@@ -1,0 +1,4 @@
+# Test Rules Data
+MockRule1|TestMapping1|85|This is a test explanation|Q1
+MockRule2|TestMapping2|78|Another test explanation|Q2
+MockRule3|TestMapping3|92|Final test explanation|Q3 

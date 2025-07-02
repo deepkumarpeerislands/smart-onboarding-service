@@ -1,0 +1,7 @@
+package com.aci.smart_onboarding.exception;
+
+public class UnauthorizedException extends RuntimeException {
+  public UnauthorizedException(String message) {
+    super(message);
+  }
+}
