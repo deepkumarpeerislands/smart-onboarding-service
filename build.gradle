@@ -126,7 +126,7 @@ dependencies {
 
 	// Spring Mail
 	implementation 'org.springframework.boot:spring-boot-starter-mail'
-	implementation 'com.sendgrid:sendgrid-java:4.10.1'
+	implementation 'com.sendgrid:sendgrid-java:4.10.3'
 
 
 	// Azure AD Dependencies
