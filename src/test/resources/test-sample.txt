@@ -1,0 +1,3 @@
+This is a sample text file used for testing the FileValidator.
+It contains plain text and should be recognized as text/plain MIME type.
+The FileValidator should accept this file as it's within the size limits and has the correct format. 

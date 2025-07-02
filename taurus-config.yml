@@ -1,0 +1,19 @@
+execution:
+  - concurrency: 10
+    hold-for: 2m
+    ramp-up: 30s
+    scenario: brd_list_scenario
+
+scenarios:
+  brd_list_scenario:
+    requests:
+      - url: http://localhost:8086/api/v1/brd?page=0&size=5
+        method: GET
+
+reporting:
+  - module: junit-xml
+    filename: taurus-report.xml
+  - module: passfail
+    criteria:
+        - avg-rt>500ms, stop as failed
+        - failures>1%, stop as failed

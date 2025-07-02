@@ -1,0 +1,240 @@
+biller.ar_file.parent_business_id | No Mapping |  | None of the provided questions directly relate to the parent business ID.
+originator.funds.wait_for_funds_before_disbursement_flag | No Mapping |  | None of the provided questions directly relate to waiting for funds before disbursement.
+biller.consolidator_flag | No Mapping |  | None of the provided questions directly relate to a consolidator flag.
+biller.ar_file.create_empty_file_flag | No Mapping |  | None of the provided questions directly relate to creating an empty file flag.
+originator.bank_account.ecom_orig.aba | No Mapping |  | None of the provided questions directly relate to the ABA of the originator's e-commerce bank account.
+originator.bank_account.ecom_orig.dda | No Mapping |  | None of the provided questions directly relate to the DDA of the originator's e-commerce bank account.
+biller.settlement_business_id | No Mapping |  | None of the provided questions directly relate to the settlement business ID.
+originator.returns.max_resubmits_allowed | achPaymentProcessing | 0.6847279667854309 | The question about 'achReturnResubmission' and 'resubmissionTimes' directly relates to the maximum resubmits allowed.
+biller.settlement.payment.pecom_originates_flag | No Mapping |  | None of the provided questions directly relate to the PECom originates flag.
+biller.settlement.payment.settlement_method | No Mapping |  | None of the provided questions directly relate to the settlement method.
+biller.settlement.payment.bank_name | No Mapping |  | None of the provided questions directly relate to the bank name for settlement payment.
+biller.settlement.payment.aba | No Mapping |  | None of the provided questions directly relate to the ABA for settlement payment.
+biller.settlement.payment.dda | No Mapping |  | None of the provided questions directly relate to the DDA for settlement payment.
+biller.settlement.payment.nacha_standard_entry_class | No Mapping |  | None of the provided questions directly relate to the NACHA standard entry class for settlement payment.
+biller.settlement.payment.nacha_transaction_code | No Mapping |  | None of the provided questions directly relate to the NACHA transaction code for settlement payment.
+biller.settlement.fee.aba | No Mapping |  | None of the provided questions directly relate to the ABA for settlement fee.
+biller.reversal.payment.aba | No Mapping |  | None of the provided questions directly relate to the ABA for reversal payment.
+biller.settlement.fee.bank_name | No Mapping |  | None of the provided questions directly relate to the bank name for settlement fee.
+biller.reversal.payment.bank_name | No Mapping |  | None of the provided questions directly relate to the bank name for reversal payment.
+biller.settlement.fee.dda | No Mapping |  | None of the provided questions directly relate to the DDA for settlement fee.
+biller.reversal.payment.dda | No Mapping |  | None of the provided questions directly relate to the DDA for reversal payment.
+biller.settlement.fee.nacha_standard_entry_class | No Mapping |  | None of the provided questions directly relate to the NACHA standard entry class for settlement fee.
+biller.reversal.payment.nacha_standard_entry_class | No Mapping |  | None of the provided questions directly relate to the NACHA standard entry class for reversal payment.
+biller.settlement.fee.nacha_transaction_code | No Mapping |  | None of the provided questions directly relate to the NACHA transaction code for settlement fee.
+biller.reversal.payment.nacha_transaction_code | No Mapping |  | None of the provided questions directly relate to the NACHA transaction code for reversal payment.
+biller.settlement.fee.pecom_originates_flag | No Mapping |  | None of the provided questions are relevant to the rule 'biller.settlement.fee.pecom_originates_flag'.
+biller.reversal.payment.pecom_originates_flag | No Mapping |  | None of the provided questions are relevant to the rule 'biller.reversal.payment.pecom_originates_flag'.
+biller.settlement.fee.settlement_method | fundingMethods | 0.716770589351654 | The rule 'biller.settlement.fee.settlement_method' is relevant to the 'fundingMethods' key as it deals with settlement methods.
+biller.reversal.payment.settlement_method | fundingMethods | 0.7269632816314697 | The rule 'biller.reversal.payment.settlement_method' is relevant to the 'fundingMethods' key as it deals with settlement methods.
+biller.settlement.ecom.aba | achPaymentProcessing | 0.7253227233886719 | The rule 'biller.settlement.ecom.aba' is relevant to the 'achPaymentProcessing' key as it deals with ABA details.
+biller.settlement.ecom.dda | achPaymentProcessing | 0.705151379108429 | The rule 'biller.settlement.ecom.dda' is relevant to the 'achPaymentProcessing' key as it deals with DDA details.
+originator.funds.ach.managed_by_ecom_flag | achPaymentProcessing | 0.7153435945510864 | The rule 'originator.funds.ach.managed_by_ecom_flag' is relevant to the 'achPaymentProcessing' key as it deals with ACH management.
+originator.funds.cc.managed_by_ecom_flag | fundingMethods | 0.6999825835227966 | The rule 'originator.funds.cc.managed_by_ecom_flag' is relevant to the 'fundingMethods' key as it deals with credit card management.
+biller.settlement.funds.ach.managed_by_ecom_flag | achPaymentProcessing | 0.728471040725708 | The rule 'biller.settlement.funds.ach.managed_by_ecom_flag' is relevant to the 'achPaymentProcessing' key as it deals with ACH management.
+biller.settlement.funds.cc.managed_by_ecom_flag | fundingMethods | 0.7063021063804626 | The rule 'biller.settlement.funds.cc.managed_by_ecom_flag' is relevant to the 'fundingMethods' key as it deals with credit card management.
+biller.credit_card.provider.business_id | clientInformation | 0.7160237431526184 | The rule 'biller.credit_card.provider.business_id' is relevant to the 'clientInformation' key as it deals with business identification.
+biller.credit_card.provider.visa.merchant_id | paymentChannels | 0.7466866374015808 | The rule 'biller.credit_card.provider.visa.merchant_id' is relevant to the 'paymentChannels' key as it deals with Visa merchant ID.
+biller.credit_card.provider.master_card.merchant_id | paymentChannels | 0.7413259744644165 | The rule 'biller.credit_card.provider.master_card.merchant_id' is relevant to the 'paymentChannels' key as it deals with MasterCard merchant ID.
+biller.credit_card.provider.discover.merchant_id | paymentChannels | 0.7328490614891052 | The rule 'biller.credit_card.provider.discover.merchant_id' is relevant to the 'paymentChannels' key as it deals with Discover merchant ID.
+biller.ach_file.company_name | achPaymentProcessing | 0.7280024290084839 | The rule 'biller.ach_file.company_name' is relevant to the 'achPaymentProcessing' key as it deals with company name.
+biller.ach_file.company_identification | achPaymentProcessing | 0.7287272810935974 | The rule 'biller.ach_file.company_identification' is relevant to the 'achPaymentProcessing' key as it deals with company identification.
+biller.ach_file.company_entry_description.batch | achPaymentProcessing | 0.7389394640922546 | The rule 'biller.ach_file.company_entry_description.batch' is relevant to the 'achPaymentProcessing' key as it deals with batch entry description.
+biller.ach_file.company_entry_description.csr | achPaymentProcessing | 0.7265748977661133 | The rule 'biller.ach_file.company_entry_description.csr' is relevant to the 'achPaymentProcessing' key as it deals with CSR entry description.
+biller.ach_file.company_entry_description.web | achPaymentProcessing | 0.7483360767364502 | The rule 'biller.ach_file.company_entry_description.web' is relevant to the 'achPaymentProcessing' key as it deals with web entry description.
+biller.ach_file.company_entry_description.service | achPaymentProcessing | 0.7361479997634888 | The rule 'biller.ach_file.company_entry_description.service' is relevant to the 'achPaymentProcessing' key as it deals with service entry description.
+biller.source_system.list | No Mapping |  | None of the provided questions are relevant to the rule 'biller.source_system.list'.
+biller.reversal.fee.aba | achPaymentProcessing | 0.7215927243232727 | The rule 'biller.reversal.fee.aba' is relevant to the 'achPaymentProcessing' key as it deals with ABA details.
+biller.reversal.fee.bank_name | achPaymentProcessing | 0.7265762686729431 | The rule 'biller.reversal.fee.bank_name' is relevant to the 'achPaymentProcessing' key as it deals with bank name.
+biller.reversal.fee.dda | achPaymentProcessing | 0.7220266461372375 | The rule 'biller.reversal.fee.dda' is relevant to the 'achPaymentProcessing' key as it deals with DDA details.
+biller.reversal.fee.nacha_standard_entry_class | achPaymentProcessing | 0.7242637276649475 | The rule 'biller.reversal.fee.nacha_standard_entry_class' is relevant to the 'achPaymentProcessing' key as it deals with NACHA standard entry class.
+biller.reversal.fee.nacha_transaction_code | No Mapping |  | None of the provided questions directly relate to a 'nacha_transaction_code' field.
+biller.reversal.fee.pecom_originates_flag | No Mapping |  | None of the provided questions directly relate to a 'pecom_originates_flag' field.
+biller.reversal.fee.settlement_method | No Mapping |  | None of the provided questions directly relate to a 'settlement_method' field.
+biller.ar_file.configuration_name | No Mapping |  | None of the provided questions directly relate to a 'configuration_name' field.
+biller.funding_account.ach_return_history.nsf_threshold | No Mapping |  | None of the provided questions directly relate to a 'nsf_threshold' field.
+biller.funding_account.ach_return_history.num_days | No Mapping |  | None of the provided questions directly relate to a 'num_days' field.
+biller.funding_account.ach_return_history.nsf_verification_enabled | No Mapping |  | None of the provided questions directly relate to a 'nsf_verification_enabled' field.
+payment_type.allows | paymentChannels | 0.7053382396697998 | The rule 'payment_type.allows' is related to the 'paymentChannels' field which specifies the allowed payment types.
+payment_type.allows | paymentChannels | 0.7053382396697998 | The rule 'payment_type.allows' is related to the 'paymentChannels' field which specifies the allowed payment types.
+payment_type.allows | paymentChannels | 0.7053382396697998 | The rule 'payment_type.allows' is related to the 'paymentChannels' field which specifies the allowed payment types.
+bank_account_type.allows | No Mapping |  | None of the provided questions directly relate to a 'bank_account_type.allows' field.
+bank_account_type.allows | No Mapping |  | None of the provided questions directly relate to a 'bank_account_type.allows' field.
+bank_account_type.allows | No Mapping |  | None of the provided questions directly relate to a 'bank_account_type.allows' field.
+bank_account_type.allows | No Mapping |  | None of the provided questions directly relate to a 'bank_account_type.allows' field.
+credit_card_type.allows | paymentChannels | 0.6936797499656677 | The rule 'credit_card_type.allows' is related to the 'paymentChannels' field which specifies the allowed credit card types.
+credit_card_type.allows | paymentChannels | 0.6936797499656677 | The rule 'credit_card_type.allows' is related to the 'paymentChannels' field which specifies the allowed credit card types.
+credit_card_type.allows | paymentChannels | 0.6936797499656677 | The rule 'credit_card_type.allows' is related to the 'paymentChannels' field which specifies the allowed credit card types.
+requested_payment_date.validation_enabled_flag | paymentRules | 0.7194344401359558 | The rule 'requested_payment_date.validation_enabled_flag' is related to the 'paymentRules' field which specifies the validation rules for payment dates.
+requested_payment_date.types | recurringPayments | 0.730347216129303 | The rule 'requested_payment_date.types' is related to the 'recurringPayments' field which specifies the types of payment dates allowed.
+requested_payment_date.maximum_days_in_future.num_days | paymentRules | 0.718259871006012 | The rule 'requested_payment_date.maximum_days_in_future.num_days' is related to the 'paymentRules' field which specifies the maximum number of days in the future a payment date can be set.
+remit_amount.validation_enabled_flag | ivr | 0.7225254774093628 | The rule 'remit_amount.validation_enabled_flag' is related to the 'ivr' field which specifies the validation rules for remit amounts.
+remit_amount.types | remittance | 0.7425844073295593 | The rule 'remit_amount.types' is related to the 'remittance' field which specifies the types of remit amounts allowed.
+remit_amount.types | remittance | 0.7425844073295593 | The rule 'remit_amount.types' is related to the 'remittance' field which specifies the types of remit amounts allowed.
+remit_amount.minimum.dollar_amount | paymentRules | 0.726338803768158 | The rule 'remit_amount.minimum.dollar_amount' is related to the 'paymentRules' field which specifies the minimum dollar amount for remit amounts.
+remit_amount.maximum.dollar_amount | paymentRules | 0.7251653075218201 | The rule 'remit_amount.maximum.dollar_amount' is related to the 'paymentRules' field which specifies the maximum dollar amount for remit amounts.
+remittance.validation_enabled_flag | No Mapping |  | None of the provided questions directly relate to a validation enabled flag for remittance.
+remittance.types | No Mapping |  | None of the provided questions directly relate to types of remittance.
+payment_remit_field.validation_enabled_flag | entryValidationPrompts | 0.7194076180458069 | The rule mentions validation enabled flag for payment remit field, which matches the 'entryValidationPrompts' key in the IVR section.
+funding_request_date.cut_off_hour | No Mapping |  | None of the provided questions directly relate to a cut-off hour for funding request date.
+funding_request_date.cut_off_minute | No Mapping |  | None of the provided questions directly relate to a cut-off minute for funding request date.
+funding_request_date.allows_saturday_flag | No Mapping |  | None of the provided questions directly relate to allowing Saturday for funding request date.
+funding_request_date.allows_sunday_flag | No Mapping |  | None of the provided questions directly relate to allowing Sunday for funding request date.
+funding_request_date.allows_federal_holidays_flag | holidays | 0.712720513343811 | The rule mentions allowing federal holidays, which matches the 'holidays' key in the remittance section.
+biller.credit_card.discover.funds_matching_id | No Mapping |  | None of the provided questions directly relate to Discover credit card funds matching ID.
+biller.credit_card.visa.funds_matching_id | No Mapping |  | None of the provided questions directly relate to Visa credit card funds matching ID.
+biller.credit_card.master_card.funds_matching_id | No Mapping |  | None of the provided questions directly relate to MasterCard credit card funds matching ID.
+ia_rule.parent_business_id | No Mapping |  | None of the provided questions directly relate to a parent business ID.
+originator.funds.atm.managed_by_ecom_flag | No Mapping |  | None of the provided questions directly relate to ATM funds managed by ecom flag.
+biller.settlement.funds.atm.managed_by_ecom_flag | No Mapping |  | None of the provided questions directly relate to ATM settlement funds managed by ecom flag.
+biller.atm_card.merchant_id | No Mapping |  | None of the provided questions directly relate to ATM card merchant ID.
+biller.atm_card.funds_matching_id | No Mapping |  | None of the provided questions directly relate to ATM card funds matching ID.
+sign_off_url | No Mapping |  | None of the provided questions directly relate to a sign-off URL.
+branding_business_id | No Mapping |  | None of the provided questions directly relate to a branding business ID.
+biller.select_existing_funding.allowed | usePreviousFunding | 0.7019609808921814 | The rule mentions selecting existing funding, which matches the 'usePreviousFunding' key in the agent portal section.
+remit_fee.types | No Mapping |  | None of the provided questions directly relate to types of remit fees.
+biller.cancel_payment.allowed | cancelPayment | 0.7252849340438843 | The rule mentions canceling payment, which matches the 'cancelPayment' key in the agent portal section.
+biller.reimburse_payment.allowed | No Mapping |  | None of the provided questions directly relate to reimbursing payment.
+biller.create_payment.allowed | No Mapping |  | None of the provided questions directly relate to creating payment.
+biller.create_payment_series.allowed | seriesOfPayments | 0.7053328156471252 | The rule mentions creating a series of payments, which matches the 'seriesOfPayments' key in the agent portal section.
+biller.modify_payment.allowed | modifyPayment | 0.7171815037727356 | The rule mentions modifying payment, which matches the 'modifyPayment' key in the agent portal section.
+biller.fee_waive.allowed | feeWaivers | 0.6973286867141724 | The rule 'biller.fee_waive.allowed' is related to the 'feeWaivers' field in the 'agentPortal' section, which deals with the conditions under which fees can be waived.
+biller.future_dated_payments.allowed | futureDatedPaymentsDays | 0.7416682839393616 | The rule is about future dated payments, which matches the key 'futureDatedPaymentsDays' in the paymentRules section.
+user_created.email.from | fromAddress | 0.6837427020072937 | The rule is about the 'from' email address, which matches the key 'fromAddress' in the agentPortal section.
+user_created.email.replyto | replyToAddress | 0.6986619830131531 | The rule is about the 'reply-to' email address, which matches the key 'replyToAddress' in the agentPortal section.
+password_reset.email.from | fromAddress | 0.694922924041748 | The rule is about the 'from' email address for password reset, which matches the key 'fromAddress' in the agentPortal section.
+password_reset.email.replyto | replyToAddress | 0.7082478404045105 | The rule is about the 'reply-to' email address for password reset, which matches the key 'replyToAddress' in the agentPortal section.
+password_reset.email.subject | No Mapping | 0.686339795589447 | There is no direct mapping for the email subject in the provided data.
+user_created.email.enabled_flag | No Mapping | 0.6769421696662903 | There is no direct mapping for the email enabled flag in the provided data.
+password_reset.email.enabled_flag | No Mapping | 0.6903878450393677 | There is no direct mapping for the email enabled flag in the provided data.
+returned_payment.email.enabled_flag | email | 0.7018355131149292 | The rule is about the enabled flag for returned payment email, which matches the key 'email' in the notifications section.
+future_dated_payment_processed.email.enabled_flag | email | 0.710579514503479 | The rule is about the enabled flag for future dated payment processed email, which matches the key 'email' in the notifications section.
+billing_account_nsf_return_count.validation_enabled_flag | validation | 0.6980326175689697 | The rule is about validation for billing account NSF return count, which matches the key 'validation' in the entryValidationPrompts section.
+duplicate_payment.enabled_flag | No Mapping | 0.6979705095291138 | There is no direct mapping for the duplicate payment enabled flag in the provided data.
+duplicate_payment.types | No Mapping | 0.721451997756958 | There is no direct mapping for the duplicate payment types in the provided data.
+duplicate_payment.funding_request_date_range_1.days_in_past | futureDatedPaymentsDays | 0.7150875926017761 | The rule is about the number of days in the past for funding request date range, which matches the key 'futureDatedPaymentsDays' in the paymentRules section.
+duplicate_payment.funding_request_date_range_1.days_in_future | futureDatedPaymentsDays | 0.7184547781944275 | The rule is about the number of days in the future for funding request date range, which matches the key 'futureDatedPaymentsDays' in the paymentRules section.
+duplicate_payment.funding_request_date_range_1.credit_payment_status_list | No Mapping | 0.7345848679542542 | There is no direct mapping for the credit payment status list in the provided data.
+duplicate_payment.funding_request_date_range_1.debit_payment_status_list | No Mapping | 0.7307170033454895 | There is no direct mapping for the debit payment status list in the provided data.
+session_timeout.num_minutes | lockoutDuration | 0.6766918897628784 | The rule is about the session timeout duration, which matches the key 'lockoutDuration' in the agentPortal section.
+image.page_header.logo | customBillerLogo | 0.6912022829055786 | The rule is about the page header logo, which matches the key 'customBillerLogo' in the agentPortal section.
+remit_fee.validation_enabled_flag | validation | 0.7150951027870178 | The rule is about validation for remit fee, which matches the key 'validation' in the entryValidationPrompts section.
+payment_confirmation_email.enabled_flag | consumerNotifications | 0.6838617324829102 | The rule is related to enabling payment confirmation emails, which matches the 'consumerNotifications' key in the JSON data.
+payment_cancellation.enabled_flag | cancelPayment | 0.7210948467254639 | The rule is related to enabling payment cancellation, which matches the 'cancelPayment' key in the 'agentPortal' section of the JSON data.
+payment_modification.enabled_flag | modifyPayment | 0.6909564733505249 | The rule is related to enabling payment modification, which matches the 'modifyPayment' key in the 'agentPortal' section of the JSON data.
+label.name_on_credit_card | No Mapping |  | The rule is related to the label for the name on a credit card, but there is no specific key in the JSON data that matches this rule.
+label.credit_card_expiration_date | No Mapping |  | The rule is related to the label for the credit card expiration date, but there is no specific key in the JSON data that matches this rule.
+label.credit_card_security_value | cvvValidation | 0.7048082947731018 | The rule is related to the label for the credit card security value, which matches the 'cvvValidation' key in the 'paymentChannels' section of the JSON data.
+biller.manage_rejects.allowed | No Mapping |  | The rule is related to managing rejects, but there is no specific key in the JSON data that matches this rule.
+biller.help_desk.allowed | No Mapping |  | The rule is related to the help desk, but there is no specific key in the JSON data that matches this rule.
+biller.credit_card.split_transaction_flag | No Mapping |  | The rule is related to the split transaction flag for credit cards, but there is no specific key in the JSON data that matches this rule.
+remit_fee.fixed.ach_amount | No Mapping |  | The rule is related to the fixed ACH amount for remittance fees, but there is no specific key in the JSON data that matches this rule.
+remit_fee.fixed.cc_amount | No Mapping |  | The rule is related to the fixed credit card amount for remittance fees, but there is no specific key in the JSON data that matches this rule.
+remit_fee.fixed.dc_amount | No Mapping |  | The rule is related to the fixed debit card amount for remittance fees, but there is no specific key in the JSON data that matches this rule.
+biller.mam_available | mamFile | 0.7026103138923645 | The rule is related to the availability of MAM (Mini Account Master), which matches the 'mamFile' key in the 'miniAccountMaster' section of the JSON data.
+biller.reports.funding_account_subtypes_allowed | fundingMethods | 0.723452627658844 | The rule is related to the allowed funding account subtypes for reports, which matches the 'fundingMethods' key in the JSON data.
+biller.reports.funding_account_subtypes_allowed | fundingMethods | 0.723452627658844 | The rule is related to the allowed funding account subtypes for reports, which matches the 'fundingMethods' key in the JSON data.
+biller.reports.funding_account_subtypes_allowed | fundingMethods | 0.723452627658844 | The rule is related to the allowed funding account subtypes for reports, which matches the 'fundingMethods' key in the JSON data.
+biller.reports.funding_account_subtypes_allowed | fundingMethods | 0.723452627658844 | The rule is related to the allowed funding account subtypes for reports, which matches the 'fundingMethods' key in the JSON data.
+biller.reports.funding_account_subtypes_allowed | fundingMethods | 0.723452627658844 | The rule is related to the allowed funding account subtypes for reports, which matches the 'fundingMethods' key in the JSON data.
+biller.reports.funding_account_subtypes_allowed | fundingMethods | 0.723452627658844 | The rule is related to the allowed funding account subtypes for reports, which matches the 'fundingMethods' key in the JSON data.
+biller.reports.funding_account_subtypes_allowed | fundingMethods | 0.723452627658844 | The rule is related to the allowed funding account subtypes for reports, which matches the 'fundingMethods' key in the JSON data.
+biller.reports.funding_account_subtypes_allowed | ivr | 0.7234942317008972 | The rule is related to funding account subtypes, and the 'ivr' section contains 'achSubType' which matches the rule.
+biller.reports.funding_account_subtypes_allowed | ivr | 0.7234942317008972 | The rule is related to funding account subtypes, and the 'ivr' section contains 'achSubType' which matches the rule.
+biller.reports.funding_account_subtypes_allowed | ivr | 0.7234942317008972 | The rule is related to funding account subtypes, and the 'ivr' section contains 'achSubType' which matches the rule.
+client.invoicing_type | No Mapping |  | The rule is related to invoicing type, but none of the questions are related to invoicing.
+biller.load_divisions.required | No Mapping |  | The rule is related to load divisions, but none of the questions are related to load divisions.
+billing_account_field_validation.validation_enabled_flag | ivr | 0.718553364276886 | The rule is related to field validation, and the 'ivr' section contains 'entryValidationPrompts' which matches the rule.
+remit_fee.fixed.visa_amount | No Mapping |  | The rule is related to visa amount, but none of the questions are related to visa amount.
+remit_fee.fixed.mc_amount | No Mapping |  | The rule is related to mc amount, but none of the questions are related to mc amount.
+remit_fee.fixed.disc_amount | No Mapping |  | The rule is related to disc amount, but none of the questions are related to disc amount.
+biller.reimbursement.split_transaction_flag | No Mapping |  | The rule is related to split transaction flag, but none of the questions are related to split transaction flag.
+bin_card_pattern_matching.enabled_flag | No Mapping |  | The rule is related to card pattern matching, but none of the questions are related to card pattern matching.
+bin_card_pattern_matching.types | No Mapping |  | The rule is related to card pattern matching types, but none of the questions are related to card pattern matching types.
+time_out_url | No Mapping |  | The rule is related to timeout URL, but none of the questions are related to timeout URL.
+future_dated_card_payment_failed.email.enabled_flag | notifications | 0.7142040133476257 | The rule is related to email notifications for failed payments, and the 'notifications' section contains relevant information.
+biller.reimbursement.partial_reimbursement_allowed_flag | No Mapping |  | The rule is related to partial reimbursement, but none of the questions are related to partial reimbursement.
+user.password_expiry_num_days | agentPortal | 0.6963870525360107 | The rule is related to password expiry, and the 'agentPortal' section contains 'passwordExpiration' which matches the rule.
+biller.ach.split_transaction_flag | achPaymentProcessing | 0.7273456454277039 | The rule is related to ACH split transaction, and the 'achPaymentProcessing' section contains relevant information.
+cc_processor.pps_file.prefix | No Mapping |  | The rule is related to PPS file prefix, but none of the questions are related to PPS file prefix.
+biller.card_pattern_matching.business_id | No Mapping |  | The rule is related to card pattern matching business ID, but none of the questions are related to card pattern matching business ID.
+biller.collector_business_id | No Mapping |  | The rule is related to collector business ID, but none of the questions are related to collector business ID.
+biller.zero_dollar_auth.supported | No Mapping |  | None of the questions directly relate to zero dollar authorization support.
+biller.avs_cvv_check.card_types | paymentChannels | 0.7270870208740234 | The question about 'acceptCreditDebitCardsChannels' in 'paymentChannels' directly relates to card types for AVS/CVV check.
+biller.avs_cvv_check.card_types | paymentChannels | 0.7270870208740234 | The question about 'acceptCreditDebitCardsChannels' in 'paymentChannels' directly relates to card types for AVS/CVV check.
+biller.avs_check.required | No Mapping |  | None of the questions directly relate to AVS check requirement.
+biller.cvv_check.required | paymentChannels | 0.7268214225769043 | The question about 'cvvValidation' in 'paymentChannels' directly relates to CVV check requirement.
+biller.cvv_check.types | paymentChannels | 0.7268617749214172 | The question about 'cvvValidation' in 'paymentChannels' directly relates to CVV check types.
+biller.mask.account_number | accountIdentifierInformation | 0.7277313470840454 | The question about 'accountIdentifierFormat' in 'accountIdentifierInformation' directly relates to masking account numbers.
+keystore_path | No Mapping |  | None of the questions directly relate to keystore path.
+keystore_private_key_name | No Mapping |  | None of the questions directly relate to keystore private key name.
+keystore_private_key_password | No Mapping |  | None of the questions directly relate to keystore private key password.
+certificate_alias | No Mapping |  | None of the questions directly relate to certificate alias.
+is_saml_assertion_encrypted | agentPortal | 0.6662653684616089 | The question about 'ssoClientCertificate' in 'agentPortal' directly relates to SAML assertion encryption.
+cert_path | No Mapping |  | None of the questions directly relate to certificate path.
+biller.available_product | fundingMethods | 0.684902548789978 | The question about 'billerAbsorbs' and 'consumerPays' in 'fundingMethods' directly relates to available products.
+biller.available_product | fundingMethods | 0.684902548789978 | The question about 'billerAbsorbs' and 'consumerPays' in 'fundingMethods' directly relates to available products.
+biller.existing_payment_display_range | paymentRules | 0.7059954404830933 | The question about 'futureDatedPaymentsDays' in 'paymentRules' directly relates to existing payment display range.
+biller.card_auth_system_supported | No Mapping |  | None of the questions directly relate to card authorization system support.
+biller.retain_funding.allowed | agentPortal | 0.7128191590309143 | The question about 'usePreviousFunding' in 'agentPortal' directly relates to retaining funding.
+label.funding_portal_credit_debit_card | paymentChannels | 0.7418681979179382 | The question about 'acceptCreditDebitCardsChannels' in 'paymentChannels' directly relates to labeling funding portal for credit/debit card.
+biller.image.fundingPortal.page_header.logo_1 | agentPortal | 0.7255983948707581 | The question about 'customBillerLogo' in 'agentPortal' directly relates to page header logo.
+biller.funding_portal.zero_dollar_auth.supported | No Mapping |  | None of the questions provided are related to zero dollar authorization support.
+biller.funding_portal.cvv_check.required | cvvValidation | 0.7374909520149231 | The rule is about CVV check requirement and the key 'cvvValidation' matches this requirement.
+biller.funding_portal.postal_code_check.required | No Mapping |  | None of the questions provided are related to postal code check requirement.
+biller.pinless_debit_card.supported | acceptCreditDebitCardsChannels | 0.7118484973907471 | The rule is about pinless debit card support and the key 'acceptCreditDebitCardsChannels' includes pinless debit cards.
+biller.obtain_billing_account.from_token_table | No Mapping |  | None of the questions provided are related to obtaining billing account from token table.
+biller.client_fundingPortal.page_header_text_line_1 | No Mapping |  | None of the questions provided are related to page header text line 1.
+biller.image.fundingPortal.aci.page_header.logo_1 | customBillerLogo | 0.716985821723938 | The rule is about the logo on the page header and the key 'customBillerLogo' matches this requirement.
+biller.aci_fundingPortal.page_header_text_line_1 | No Mapping |  | None of the questions provided are related to ACI funding portal page header text line 1.
+biller.add_screen_text_instruction | No Mapping |  | None of the questions provided are related to adding screen text instruction.
+biller.edit_screen_text_instruction | No Mapping |  | None of the questions provided are related to editing screen text instruction.
+biller.image_fundingPortal.page_trailer_logo_1 | customBillerLogo | 0.7226817607879639 | The rule is about the logo on the page trailer and the key 'customBillerLogo' matches this requirement.
+biller.client_fundingPortal.page_trailer_text_1 | No Mapping |  | None of the questions provided are related to page trailer text 1.
+biller.image.fundingPortal.aci.page.trailer_logo_1 | customBillerLogo | 0.7137147784233093 | The rule is about the logo on the page trailer and the key 'customBillerLogo' matches this requirement.
+biller.aci_fundingPortal.page_trailer_text_line_1 | No Mapping |  | None of the questions provided are related to ACI funding portal page trailer text line 1.
+biller.maximum_settlement.credit_threshold_amount | creditToBillerThreshold | 0.721948504447937 | The rule is about the maximum settlement credit threshold amount and the key 'creditToBillerThreshold' matches this requirement.
+biller.maximum_settlement.debit_threshold_amount | debitToBillerThreshold | 0.7216322422027588 | The rule is about the maximum settlement debit threshold amount and the key 'debitToBillerThreshold' matches this requirement.
+biller.override_return.fatal_overrides_threshold | No Mapping |  | None of the questions provided are related to override return fatal overrides threshold.
+future_dated_payment_reminder.enabled | consumerNotifications | 0.7241063714027405 | The rule is about enabling future dated payment reminder and the key 'consumerNotifications' includes future-dated payment reminder.
+biller.feature.sso.saml.enabled | samlEndPoint | 0.7251823544502258 | The rule is about enabling SSO SAML and the key 'samlEndPoint' matches this requirement.
+billersapi.paymentChannels_0.id | paymentChannelsPortal | 0.7556986808776855 | The rule is about payment channels and the key 'paymentChannelsPortal' matches this requirement.
+billersapi.paymentChannels_0.kind | paymentChannels | 0.7526966333389282 | The rule is related to payment channels, and the JSON data contains a key named 'paymentChannels' which matches the rule.
+billersapi.paymentChannels_0.paymentConfigurationId | paymentChannels | 0.7429540753364563 | The rule is related to payment channels, and the JSON data contains a key named 'paymentChannels' which matches the rule.
+billersapi.paymentConfigurations_0.id | No Mapping |  | There is no specific key in the JSON data that matches the rule 'paymentConfigurations_0.id'.
+biller.debt_repayment_indicator.enabled | No Mapping |  | There is no specific key in the JSON data that matches the rule 'debt_repayment_indicator.enabled'.
+biller.api_key_authorization_allowed | No Mapping |  | There is no specific key in the JSON data that matches the rule 'api_key_authorization_allowed'.
+billersapi.paymentConfigurations_0.paymentOptions_0 | recurringPayments | 0.769534170627594 | The rule is related to payment options, and the JSON data contains a key named 'recurringPayments' which matches the rule.
+userinterfaces_1.id | No Mapping |  | There is no specific key in the JSON data that matches the rule 'userinterfaces_1.id'.
+biller.ach_validation.enabled | achPaymentProcessing | 0.720381498336792 | The rule is related to ACH validation, and the JSON data contains a key named 'achPaymentProcessing' which matches the rule.
+biller.ach_validation.tenantId | achPaymentProcessing | 0.715292751789093 | The rule is related to ACH validation, and the JSON data contains a key named 'achPaymentProcessing' which matches the rule.
+client_console.biller.sso.saml.attribute_login.enabled | agentPortal | 0.7357968091964722 | The rule is related to SSO configuration, and the JSON data contains a key named 'agentPortal' which matches the rule.
+client_console.biller.sso.saml.attribute_login.attribute_name | agentPortal | 0.7216107249259949 | The rule is related to SSO configuration, and the JSON data contains a key named 'agentPortal' which matches the rule.
+biller.credit_card.discover.chargeback_funds_matching_id | No Mapping |  | There is no specific key in the JSON data that matches the rule 'credit_card.discover.chargeback_funds_matching_id'.
+biller.credit_card.master_card.chargeback_funds_matching_id | No Mapping |  | There is no specific key in the JSON data that matches the rule 'credit_card.master_card.chargeback_funds_matching_id'.
+biller.credit_card.visa.chargeback_funds_matching_id | No Mapping |  | There is no specific key in the JSON data that matches the rule 'credit_card.visa.chargeback_funds_matching_id'.
+biller.bank_account_validation_report.enabled | achPaymentProcessing | 0.74128258228302 | The rule is related to bank account validation, and the JSON data contains a key named 'achPaymentProcessing' which matches the rule.
+biller.ar_file.parent_business_id | No Mapping |  | There is no specific key in the JSON data that matches the rule 'ar_file.parent_business_id'.
+biller.parent_id | No Mapping |  | There is no specific key in the JSON data that matches the rule 'parent_id'.
+biller.settlement_business_id | No Mapping |  | There is no specific key in the JSON data that matches the rule 'settlement_business_id'.
+biller.settlement.fee.pecom_originates_flag | No Mapping |  | There is no specific key in the JSON data that matches the rule 'settlement.fee.pecom_originates_flag'.
+biller.reversal.fee.pecom_originates_flag | No Mapping |  | There is no specific key in the JSON data that matches the rule 'reversal.fee.pecom_originates_flag'.
+application_business_id | customerId | 0.7054492831230164 | The rule 'application_business_id' is relevant to the 'customerId' field in the 'clientInformation' section, which uniquely identifies the business application.
+ia_rule.parent_business_id | No Mapping |  | The rule 'ia_rule.parent_business_id' does not directly map to any specific field in the provided JSON data.
+branding_business_id | No Mapping |  | The rule 'branding_business_id' does not directly map to any specific field in the provided JSON data.
+remit_fee.types | No Mapping |  | The rule 'remit_fee.types' does not directly map to any specific field in the provided JSON data.
+remit_fee.fixed.ach_amount | achFlat | 0.7301795482635498 | The rule 'remit_fee.fixed.ach_amount' is relevant to the 'achFlat' field in the 'fundingMethods' section, which specifies the fixed ACH amount.
+remit_fee.fixed.cc_amount | creditFlat | 0.7105055451393127 | The rule 'remit_fee.fixed.cc_amount' is relevant to the 'creditFlat' field in the 'fundingMethods' section, which specifies the fixed credit card amount.
+remit_fee.fixed.dc_amount | sigDebitFlat | 0.7077215313911438 | The rule 'remit_fee.fixed.dc_amount' is relevant to the 'sigDebitFlat' field in the 'fundingMethods' section, which specifies the fixed debit card amount.
+remit_fee.fixed.visa_amount | No Mapping |  | The rule 'remit_fee.fixed.visa_amount' does not directly map to any specific field in the provided JSON data.
+remit_fee.fixed.mc_amount | No Mapping |  | The rule 'remit_fee.fixed.mc_amount' does not directly map to any specific field in the provided JSON data.
+one_time_pay_ivr.application_business_id | ivrNumber1 | 0.7408186793327332 | The rule 'one_time_pay_ivr.application_business_id' is relevant to the 'ivrNumber1' field in the 'ivr' section, which identifies the IVR application.
+biller.collector_business_id | achcompanyID | 0.6894494891166687 | The rule 'biller.collector_business_id' is relevant to the 'achcompanyID' field in the 'achPaymentProcessing' section, which identifies the collector business.
+biller.ar_file.parent_business_id | No Mapping |  | The rule 'biller.ar_file.parent_business_id' does not directly map to any specific field in the provided JSON data.
+biller.parent_id | No Mapping |  | The rule 'biller.parent_id' does not directly map to any specific field in the provided JSON data.
+biller.settlement_business_id | No Mapping |  | The rule 'biller.settlement_business_id' does not directly map to any specific field in the provided JSON data.
+application_business_id | customerId | 0.7054492831230164 | The rule 'application_business_id' is relevant to the 'customerId' field in the 'clientInformation' section, which uniquely identifies the business application.
+ia_rule.parent_business_id | No Mapping |  | The rule 'ia_rule.parent_business_id' does not directly map to any specific field in the provided JSON data.
+branding_business_id | No Mapping |  | The rule 'branding_business_id' does not directly map to any specific field in the provided JSON data.
+one_time_pay_ivr.application_business_id | ivrNumber1 | 0.740879237651825 | The rule 'one_time_pay_ivr.application_business_id' is relevant to the 'ivrNumber1' field in the 'ivr' section, which identifies the IVR application.
+biller.collector_business_id | achcompanyID | 0.6894494891166687 | The rule 'biller.collector_business_id' is relevant to the 'achcompanyID' field in the 'achPaymentProcessing' section, which identifies the collector business.

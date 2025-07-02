@@ -1,0 +1,30 @@
+server:
+  port: 8086
+
+logging:
+  level:
+    root: INFO
+    com.aci: INFO
+    org.springframework: WARN
+    org.springframework.boot.web: INFO
+
+management:
+  endpoint:
+    health:
+      show-details: when_authorized
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+      base-path: /actuator
+  health:
+    db:
+      enabled: true
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: smart-onboarding
+    environment: prod

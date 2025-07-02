@@ -1,0 +1,28 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+1. Methods should not exceed 15 lines.
+
+2. In test cases, avoid using eq(""); use values directly.
+
+3. Field names should follow proper camelCase; constants should be UPPER_SNAKE_CASE.
+
+4. Don't throw generic exceptions; use specific or custom exceptions.
+
+5. Use constants for repeated literals instead of hardcoding.
+
+6. Prefer lambda expressions where possible.
+
+7. No new SonarQube issues should be introduced.
+
+8. Minimize nesting (avoid more than 3 levels deep).
+
+9. Use meaningful names for variables, methods, and classes.
+
+10. Document public methods with short JavaDoc if needed.
+
+11. Avoid hardcoded values in the code (move to constants/config).
+
+12. Use Optional instead of returning null when possible.

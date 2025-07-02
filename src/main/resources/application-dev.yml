@@ -1,0 +1,9 @@
+server:
+  port: 8086
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    com.aci.smart_onboarding: DEBUG
+
+
