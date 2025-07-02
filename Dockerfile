@@ -22,7 +22,7 @@ COPY . .
 RUN gradle build -x test --no-daemon
 
 # Run stage
-FROM --platform=linux/amd64 eclipse-temurin:21-jre-jammy
+FROM --platform=linux/amd64 eclipse-temurin:21.0.7_6-jre-jammy
 WORKDIR /app
 
 # Create a non-root user
