@@ -135,8 +135,8 @@ dependencies {
 
 	// CSV and Excel Processing
 	implementation 'com.opencsv:opencsv:5.9'
-	implementation 'org.apache.poi:poi:5.2.5'
-	implementation 'org.apache.poi:poi-ooxml:5.2.5'
+	implementation 'org.apache.poi:poi:5.5.1'
+	implementation 'org.apache.poi:poi-ooxml:5.5.1'
 
 	// Test dependencies
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
