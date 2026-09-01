@@ -118,8 +118,8 @@ dependencies {
 	testImplementation 'org.mockito:mockito-inline:5.2.0'
 
 	// Azure AD MSAL4J
-	implementation 'com.microsoft.azure:msal4j:1.13.3'
-	implementation 'com.microsoft.azure:msal4j-persistence-extension:1.2.0'
+	implementation 'com.microsoft.azure:msal4j:1.26.0'
+	implementation 'com.microsoft.azure:msal4j-persistence-extension:1.3.0'
 
 	// JWT Libraries
 	implementation 'com.nimbusds:nimbus-jose-jwt:9.31'
